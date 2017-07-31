@@ -1,0 +1,62 @@
+# Site Info
+title: '2xel 개발블로그' #블로그 제목
+tagline: '개발공부 시작한지' #페이지 제목
+description: '공부하면서 배우는 점을 기록하는 곳입니다.' #블로그 설명
+baseurl: '' #베이스 url
+url: http://2xel.github.io
+logo: '/public/logo.png' #로고경로
+
+# Site configurations
+gems:
+  - jekyll-paginate
+markdown: kramdown
+kramdown:
+  input: GFM
+excerpt_separator: "<!-- more -->"
+sass:
+  style: compressed
+  sass_dir: _scss
+paginate: 5
+paginate_path: '/blog/page:num'
+permalink: pretty
+version: 1.0.0
+
+# About/contact
+author:
+  name: LEE JAEMIN
+  description: 이재민(LEE JAEMIN)
+  contact:
+    # linkedin:  https://www.linkedin.com/
+    github:    https://github.com/2xel
+    facebook:  https://www.facebook.com
+    email:     mailto:jaeminstar@gmail.com
+
+# Navigation (2nd level links supported)
+nav:
+  Home:
+    - '/'
+  Blog:
+    - '/blog/categories'
+    - { TIL (Today I Learned): '/blog/#til/' }
+    - { Spring: '/blog/#spring/' }
+    - { Java: '/blog/#java/' }
+    - { Javascript: '/blog/#javascript/' }
+    - { DB: '/blog/#db/' }
+    - { Linux: '/blog/#linux/' }
+    - { git: '/blog/#git/' }
+    - { 알고리즘: '/blog/#알고리즘/' }
+    - { 컴퓨터공학 : '/blog/#컴퓨터공학/' }
+    - { etc: '/blog/#etc/' }
+  About:
+    - '/about/'
+  Search:
+    - '/search/'
+
+# Where are tags and categories displayed
+tag_page: '/blog/tags/'
+category_page: '/blog/categories/'
+
+# Puglins
+mathjax: true # whether support mathjax
+google_analytics_token: 'UA-106767683-1' # leave blank if you don't want google analytics
+disqus_short_name: '2xel' # leave blank if you don't want disqus
